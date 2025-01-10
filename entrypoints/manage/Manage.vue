@@ -120,9 +120,9 @@ function handleImageError(event: Event, bookmark: any) {
                 </div>
             </div>
         </section>
-
         <!-- 文件夹区域 -->
         <section v-if="firstLevelFolders.length" class="section">
+            <hr class="divider_line"/>
             <div class="section-header">
                 <h2>文件夹</h2>
                 <button class="icon-btn" @click="addNewFolder">
@@ -270,6 +270,11 @@ function handleImageError(event: Event, bookmark: any) {
     display: flex;
     justify-content: flex-end;
     gap: 8px;
+}
+
+.divider_line {
+    border: 1px solid #dddddd;
+    margin: 20px 0;
 }
 
 .folders-container {

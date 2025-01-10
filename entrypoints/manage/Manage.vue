@@ -337,6 +337,11 @@ function handleImageError(event: Event, bookmark: any) {
     border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-btn.small {

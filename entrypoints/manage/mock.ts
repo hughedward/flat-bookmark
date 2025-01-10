@@ -41,48 +41,6 @@ export const mockBookmarks: chrome.bookmarks.BookmarkTreeNode[] = [
                 title: 'ChatGPT',
                 url: 'https://chat.openai.com',
                 dateAdded: Date.now()
-            },{
-                id: '11',
-                parentId: '1',
-                title: 'ChatGPT',
-                url: 'https://chat.openai.com',
-                dateAdded: Date.now()
-            },{
-                id: '11',
-                parentId: '1',
-                title: 'ChatGPT',
-                url: 'https://chat.openai.com',
-                dateAdded: Date.now()
-            },{
-                id: '11',
-                parentId: '1',
-                title: 'ChatGPT',
-                url: 'https://chat.openai.com',
-                dateAdded: Date.now()
-            },{
-                id: '11',
-                parentId: '1',
-                title: 'ChatGPT',
-                url: 'https://chat.openai.com',
-                dateAdded: Date.now()
-            },{
-                id: '11',
-                parentId: '1',
-                title: 'ChatGPT',
-                url: 'https://chat.openai.com',
-                dateAdded: Date.now()
-            },{
-                id: '11',
-                parentId: '1',
-                title: 'ChatGPT',
-                url: 'https://chat.openai.com',
-                dateAdded: Date.now()
-            },{
-                id: '11',
-                parentId: '1',
-                title: 'ChatGPT',
-                url: 'https://chat.openai.com',
-                dateAdded: Date.now()
             },
             {
                 id: '12',

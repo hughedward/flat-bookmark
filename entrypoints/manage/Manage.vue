@@ -129,26 +129,41 @@ function handleImageError(event: Event, bookmark: any) {
                     <span class="icon">+</span>
                 </button>
             </div>
-            <div class="folders-container">
-                <div v-for="folder in firstLevelFolders" :key="folder.id" class="folder-card">
-                    <div class="folder-header">
+            <div v-for="folder in firstLevelFolders" :key="folder.id" class="folder-section">
+                <div class="section-header">
+                    <div class="folder-title">
                         <span class="folder-icon">📁</span>
-                        <span class="folder-title">
-                            <!--  -->
-                            {{ folder.title }}
-                        </span>
-                        <div class="folder-actions">
-                            <button class="icon-btn small" @click="editFolder(folder.id)">✏️</button>
-                            <button class="icon-btn small" @click="addFolder(folder.id)">+</button>
-                            <button class="icon-btn small" @click="deleteFolder(folder.id)">🗑️</button>
-                        </div>
+                        {{ folder.title }}
                     </div>
-                    <div class="folder-content">
-                        <div v-for="item in folder.children" :key="item.id" class="folder-item">
-                            <div class="text-icon" style="flex: 1; min-width: 0;">
-                                {{ getFirstChar(item.title) }}
+                    <div class="folder-actions">
+                        <button class="icon-btn small" @click="editFolder(folder.id)">✏️</button>
+                        <button class="icon-btn small" @click="addFolder(folder.id)">+</button>
+                        <button class="icon-btn small" @click="deleteFolder(folder.id)">🗑️</button>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div v-for="item in folder.children" :key="item.id" class="card">
+                        <div class="card-header">
+                            <div class="card-img">
+                                <img v-if="getFaviconUrl(item.url)"
+                                     :src="getFaviconUrl(item.url)"
+                                     :alt="item.title"
+                                     @error="$event.target.parentElement.querySelector('.text-icon').style.display = 'flex'; $event.target.style.display = 'none'"
+                                     class="favicon">
+                                <div class="text-icon"
+                                     :style="{ display: getFaviconUrl(item.url) ? 'none' : 'flex' }">
+                                    {{ getFirstChar(item.title) }}
+                                </div>
                             </div>
-                            <a :href="item.url" target="_blank">{{ item.title }}</a>
+                            <div class="card-content">
+                                <a :href="item.url" target="_blank" class="card-title">
+                                    {{ item.title }}
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="icon-btn small" @click="editBookmark(item)">✏️</button>
+                            <button class="icon-btn small" @click="deleteBookmark(item.id)">🗑️</button>
                         </div>
                     </div>
                 </div>
@@ -326,5 +341,30 @@ function handleImageError(event: Event, bookmark: any) {
 
 .icon-btn:hover {
     background: #f5f5f5;
+}
+
+.folder-section {
+    margin-bottom: 30px;
+}
+
+.folder-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.folder-icon {
+    font-size: 20px;
+}
+
+/* 移除不需要的样式 */
+.folders-container,
+.folder-card,
+.folder-header,
+.folder-content,
+.folder-item {
+    display: none;
 }
 </style>

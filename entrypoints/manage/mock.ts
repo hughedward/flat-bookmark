@@ -38,7 +38,7 @@ export const mockBookmarks: chrome.bookmarks.BookmarkTreeNode[] = [
             {
                 id: '11',
                 parentId: '1',
-                title: 'ChatGPT',
+                title: 'ChatGPTaaaaaaaaaaa',
                 url: 'https://chat.openai.com',
                 dateAdded: Date.now()
             },

@@ -14,7 +14,7 @@ const goToManagePage = () => {
 
 <template>
   <h1>{{ msg }}</h1>
-  <h2 @click="goToManagePage">go to manage page</h2>
+  <h2>you need to create a home-dir-bookmark named qyb first</h2>
 
   <!-- <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>

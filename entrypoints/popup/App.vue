@@ -8,7 +8,7 @@ const openManage = () => {
 
 <template>
   <div>
-    <button @click="openManage">打开管理页面</button>
+    <button @click="openManage">click me</button>
   </div>
   <HelloWorld msg="Please Smile" />
 </template>

@@ -33,3 +33,35 @@ _____ _        _  _____   ____   ___   ___  _  ____  __    _    ____  _  __
 
 ## Now that you've got it all figured out, go ahead and create your own 😜
 
+
+## How to Install It by source-code
+> This project uses [wxt](https://wxt.dev/) framework, It's very cool 😎
+
+```shell
+# env
+AdwarddeMacBook-Pro:
+$ node --version
+v19.9.0
+AdwarddeMacBook-Pro:
+$ pnpm --version 
+9.15.2
+
+
+# get the proj here
+git clone https://github.com/hughedward/flat-bookmark.git
+cd flat-bookmark
+pnpm i
+# run it
+pnpm run dev
+
+```
+Now you can try it on your own pc 🥳
+
+
+
+
+
+
+
+
+

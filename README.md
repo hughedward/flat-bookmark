@@ -58,6 +58,9 @@ pnpm run dev
 ```
 Now you can try it on your own pc 🥳
 
+this is an example file I share you: [bookmarks_2025_1_12.html](https://github.com/hughedward/flat-bookmark/blob/main/bookmarks_2025_1_12.html)
+
+wish you happy 😃 
 
 
 

@@ -5,7 +5,8 @@ _____ _        _  _____   ____   ___   ___  _  ____  __    _    ____  _  __
 |  _| | |___ / ___ \| |   | |_) | |_| | |_| | . \| |  | |/ ___ \|  _ <| . \ 
 |_|   |_____/_/   \_\_|   |____/ \___/ \___/|_|\_\_|  |_/_/   \_\_| \_\_|\_\
 ```
-<h1>Design your own index nav page😋</h1>
+<h1>It's a chrome extension 🧩 </h1>
+<h2>Design your own index nav page😋</h2>
                                                                              
 <img width="700" alt="nicepic02 2 2" src="https://github.com/user-attachments/assets/5f71b12d-4301-4ffb-b090-d6903ca4efdd" />
 

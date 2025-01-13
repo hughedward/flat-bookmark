@@ -7,7 +7,6 @@ export default defineConfig({
   manifest: {
     name: 'flat-bookmark',
     permissions: [
-      'tabs',
       'bookmarks'
     ],
     // 使用项目中已有的图标
